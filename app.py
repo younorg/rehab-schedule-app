@@ -13,6 +13,8 @@ client = gspread.authorize(creds)
 SHEET_ID = "1keGmcj7H6nv4-30ldgRJk0byZcCEiG1vomQeczveXM"
 GID = "1011196788"
 url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={GID}"
+st.write("https://docs.google.com/spreadsheets/d/1keGmcj7H6nv4-30ldgRJk0byZcCElGj1vomQeczveXM/edit?gid=1011196788#gid=1011196788")
+st.write(url)
 
 # 讀取資料
 df = pd.read_csv(url, skiprows=3)
