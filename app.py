@@ -10,7 +10,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(st.secrets["gcp_service
 client = gspread.authorize(creds)
 
 # 設定 Google Sheet 的網址與 GID
-SHEET_ID = "1keGmcj7H6nv4-30ldgRJk0byZcCEiG1vomQeczveXM"
+SHEET_ID = "1keGmcj7H6nv4-30ldgRJk0byZcCElGj1vomQeczveXM"
 GID = "1011196788"
 url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={GID}"
 st.write("https://docs.google.com/spreadsheets/d/1keGmcj7H6nv4-30ldgRJk0byZcCElGj1vomQeczveXM/edit?gid=1011196788#gid=1011196788")
