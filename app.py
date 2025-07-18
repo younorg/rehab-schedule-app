@@ -11,7 +11,7 @@ client = gspread.authorize(creds)
 SHEET_ID = "1keGmcj7H6nv4-30ldgRJk0byZcCElGj1vomQeczveXM"
 GID = "1011196788"
 url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={GID}"
-df = pd.read_csv(url, skiprows=3)
+df = pd.read_csv(url, skiprows=4)
 df = df.rename(columns={df.columns[1]: "姓名"})
 
 weekday_index = datetime.datetime.today().weekday()
